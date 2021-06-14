@@ -1,8 +1,112 @@
-/* 
-    background color #FFFFFF 
-    secondary bg color #F5F4FA
-    hero and footer bg color #2F303A
-    accent color #2196F3
-    headlines color #212121
-    text color #757575
-*/
+:root {
+  --basic-color: #ffffff;
+  --opposite-basic-color: #000000;
+  --bg-color-light: #f5f4fa;
+  --bg-colog-dark: #2f303a;
+  --brand-color: #2196f3;
+  --text-color: #757575;
+  --titles-color: #212121;
+}
+
+body {
+  color: var(--text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.title {
+  color: var(--titles-color);
+}
+
+/* Logo */
+.logo {
+  color: var(--opposite-basic-color);
+  text-decoration: none;
+}
+
+.brand {
+  color: var(--brand-color);
+}
+
+.logo-ending {
+  color: var(--opposite-basic-color);
+}
+
+/* Site navigation */
+.site-nav .link {
+  color: var(--titles-color);
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link:active {
+  color: var(--brand-color);
+}
+
+/* Header contacts */
+.contacts .link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.contacts .link:hover,
+.contacts .link:focus,
+.contacts .link:active {
+  color: var(--brand-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--bg-colog-dark);
+}
+
+.hero .title {
+  color: var(--basic-color);
+}
+
+/* Team */
+.team {
+  background-color: var(--bg-color-light);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-colog-dark);
+}
+
+.footer .link {
+  color: var(--basic-color);
+  text-decoration: none;
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+/* Buttons */
+.button {
+  color: var(--basic-color);
+  background-color: var(--brand-color);
+  border: none;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.filter {
+  color: var(--titles-color);
+  background-color: var(--bg-color-light);
+  border: none;
+  border-radius: 4px;
+  padding: 14px 22px 14px 22px;
+}
+
+.filter:hover,
+.filter:focus,
+.filter:active {
+  color: var(--basic-color);
+  background-color: var(--brand-color);
+}
